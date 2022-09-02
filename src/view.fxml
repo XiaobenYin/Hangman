@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Hangman" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <ToolBar layoutX="18.0" layoutY="318.0" prefHeight="40.0" prefWidth="563.0">
+              <items>
+                  <TextField fx:id="inputtext" prefHeight="27.0" prefWidth="482.0" />
+                <Button fx:id="guessbutton" mnemonicParsing="false" text="Guess!" />
+              </items>
+            </ToolBar>
+            <TitledPane layoutX="18.0" layoutY="14.0" prefHeight="292.0" prefWidth="350.0" text="Progress">
+               <content>
+                  <TextArea fx:id="progresstext" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="379.0" layoutY="14.0" text="Winrate">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="19.0" prefWidth="200.0">
+                     <children>
+                        <ProgressBar fx:id="winratebar" prefHeight="21.0" prefWidth="200.0" progress="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="379.0" layoutY="98.0" text="History">
+              <content>
+                <AnchorPane fx:id="history" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="histroytext" prefHeight="180.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </AnchorPane>
+  </content>
+</TitledPane>
